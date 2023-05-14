@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  align-items: center;
+
+  background-color: #333;
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-family: Helvetica;
+
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000;
+
+  color: #FFF;
+
+  margin-bottom: 30px;
+
+  padding: 30px 0;
+
+  text-align: center;
+
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+
+  margin: 15px auto 80px;
+}
+
+.grid-item {
+  color: #FFF;
+
+  font-size: 1.5rem;
+
+  margin: 10px;
+
+  padding: 15px;
+
+  text-align: center;
+}
+
+#grid1 {
+  border: 5px solid #CA5085;
+
+  /* Linhas com 100px de altura e 2 colunas com 1fr */
+  grid: 100px / 1fr 1fr;
+}
+
+#grid2 {
+  border: 5px solid #FF7C97;
+
+  /*
+    - Linha com 200px;
+    - O grid-auto-flow está definido como columns (vem 
+    antes da definição das colunas);
+    - O grid-auto-columns está definido com 200 e 150px;
+  */
+  grid: 200px / auto-flow 200px 150px;
+}
+
+#grid3 {
+  border: 5px solid #FFBB9F;
+
+  grid:
+		"logo nav nav" 80px 
+		"sidenav content advert" 200px 
+		"sidenav footer footer" 150px 
+	  / 200px 1fr 150px;
+}
+
+.items1 {
+  border: 5px solid #CA5085;
+}
+
+.items2 {
+  border: 5px solid #FF7C97;
+}
+
+.items3 {
+  border: 5px solid #FFBB9F;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}

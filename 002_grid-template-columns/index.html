@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-columns</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Grid-template-columns</h1>
+    </header>
+    <h2 style="color: #FFA9FF;">grid-template-columns: 100px 100px 100px 100px;</h2>
+    <div class="grid-container" id="grid1">
+      <div class="grid-item items1">1</div>
+      <div class="grid-item items1">2</div>
+      <div class="grid-item items1">3</div>
+      <div class="grid-item items1">4</div>
+    </div>
+    <h2 style="color: #FFB0CF;">grid-template-columns: 1fr 2fr;</h2>
+    <div class="grid-container" id="grid2">
+      <div class="grid-item items2">1</div>
+      <div class="grid-item items2">2</div>
+      <div class="grid-item items2">3</div>
+      <div class="grid-item items2">4</div>
+    </div>
+    <h2 style="color: #FFB0CF;">grid-template-columns: 1fr 2fr;</h2>
+    <div class="grid-container" id="grid2">
+      <div class="grid-item items2">1111111111111111111</div>
+      <div class="grid-item items2">2</div>
+      <div class="grid-item items2">3</div>
+      <div class="grid-item items2">4</div>
+    </div>
+    <h2 style="color: #D1E352;">grid-template-columns: minmax(200px, 1fr) 1fr 1fr;</h2>
+    <div class="grid-container" id="grid3">
+      <div class="grid-item items3">1</div>
+      <div class="grid-item items3">2</div>
+      <div class="grid-item items3">3</div>
+      <div class="grid-item items3">4</div>
+      <div class="grid-item items3">5</div>
+      <div class="grid-item items3">6</div>
+    </div>
+    <h2 style="color: #00B1AF;">grid-template-columns: repeat(3, 1fr);</h2>
+    <div class="grid-container" id="grid4">
+      <div class="grid-item items4">1</div>
+      <div class="grid-item items4">2</div>
+      <div class="grid-item items4">3</div>
+      <div class="grid-item items4">4</div>
+      <div class="grid-item items4">5</div>
+      <div class="grid-item items4">6</div>
+    </div>
+    <h2 style="color: #FF0063;">grid-template-columns: repeat(auto-fit, minmax(100px, auto));</h2>
+    <div class="grid-container" id="grid5">
+      <div class="grid-item items5">1</div>
+      <div class="grid-item items5">2</div>
+      <div class="grid-item items5">3</div>
+      <div class="grid-item items5">4</div>
+      <div class="grid-item items5">5</div>
+      <div class="grid-item items5">6</div>
+    </div>
+  </body>
+</html>

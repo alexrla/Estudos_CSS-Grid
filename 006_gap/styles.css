@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  align-items: center;
+
+  background-color: #333;
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-family: Helvetica;
+
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000;
+
+  color: #FFF;
+
+  margin-bottom: 30px;
+
+  padding: 30px 0;
+
+  text-align: center;
+
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template: 
+  'header header header header' 100px
+  'nav main main main' 300px
+  'footer footer footer footer' 100px;
+
+  margin: 15px auto 80px;
+
+  width: 400px;
+}
+
+.header, .nav, .main, .footer {
+  align-items: center;
+
+  border: 3px solid #FFF;
+
+  color: #FFF;
+
+  display: flex;
+
+  font-size: 1.5rem;
+
+  justify-content: center;
+}
+
+#grid1 :is(.header, .nav, .main, .footer) {
+  background-color: #3CB57B;
+}
+
+#grid2 :is(.header, .nav, .main, .footer) {
+  background-color: #EA4792;
+}
+
+#grid3 :is(.header, .nav, .main, .footer) {
+  background-color: #F18471;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+#grid1 {
+  gap: 20px
+}
+
+#grid2 {
+  column-gap: 20px;
+}
+
+#grid3 {
+  row-gap: 20px;
+}
